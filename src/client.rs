@@ -4,7 +4,7 @@ use macroquad::prelude::*;
 
 mod shared;
 
-#[macroquad::main("Online test")]
+#[macroquad::main("Rutor")]
 async fn main() {
     println!("Connecting");
     let stream = TcpStream::connect("127.0.0.1:6666").unwrap();
