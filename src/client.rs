@@ -22,7 +22,11 @@ async fn main() {
 
         clear_background(BLACK);
 
-        
+        for x in 0..3 {
+            for y in 0..3 {
+                draw_rectangle(100.0 + x as f32 * 150.0, 100.0 + y as f32 * 150.0, 100.0, 100.0, GRAY);
+            }
+        }
 
         while let Some(packet) = socket.recv_packet() {
             match packet {
